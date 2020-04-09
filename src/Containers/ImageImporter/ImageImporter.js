@@ -5,13 +5,15 @@ import React from 'react';
 import sketchbookGallery from '../../assets/assetsIndex/assetsIndex';
 import illustrationGallery from '../../assets/artwork/illustrations/illustrationsIndex';
 import digitalGallery from '../../assets/artwork/digitalWork/digitalIndex';
-import promotion from '../../assets/website-designs/watermarkSignature.png'
+import defaultDisplay from '../../assets/website-designs/watermarkSignature.png';
+import promotionalImage from '../../assets/skeletonHandRose.png';
 import Frame from '../Frame/Frame';
 
 let galleryName = null;
 let galleryPaths = [];
 let artwork = [];
 let framedArt = [];
+
 const artStyle = {
 
         justifyContent: 'space-around',
@@ -45,8 +47,12 @@ const imageImporter = (props) => {
             framedArt = artwork.map((art)=><Frame art={art} />);
             return(framedArt);
 
+        case 'promotional':
+            galleryPaths = promotionalImage;
+            return(<Frame art={(<img src={galleryPaths} style={artStyle} alt='promotional' />)} />);
+            
         default:
-            return(<img src={promotion} style={artStyle} alt='default shrug' />);
+            return(<img src={defaultDisplay} style={artStyle} alt='default shrug' />);
     }
 }
 

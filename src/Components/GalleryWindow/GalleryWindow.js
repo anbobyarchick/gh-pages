@@ -1,5 +1,5 @@
 import React from 'react';
-import GallerySwitch from '../../Containers/gallerySwitch/gallerySwitch';
+import GallerySwitch from '../../Containers/ImageImporter/ImageImporter';
 
 
 

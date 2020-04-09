@@ -2,36 +2,58 @@ import React, {Component, useState } from 'react';
 import Aux from '../../hoc/AuxComponent/AuxComponent'
 import GalleryWindow from '../../Components/GalleryWindow/GalleryWindow';
 import GalleryNavButton from '../../Components/GalleryNavButton/GalleryNavButton';
+import digital from '../../assets/website-designs/digital_button_design.png';
+import illustrated from '../../assets/website-designs/illustration_button_design.png';
+import sketch from '../../assets/website-designs/sketch_button_design.png';
 
 
-// This component manages state!
-// This component holds the gallery window and portfolio navigation space (3 buttons to switch
-//  between portfolio sources)
-// The width of the portfolio navigation space should match the width of the gallery window
-// This Components position maintains a static left margin, min-width, max-width, uniform padding
+const buttonStyleTop = {
+    position: 'fixed',
+    top: '30%',
+    right: '1%',
+    backgroundColor: '#692d03',
+    justifyContent: 'center',
+    maxWidth: '18%',
+    height: '15%',
+    objectFit: 'scale-down'
 
-// const portfolioStyle = {
+}
+const buttonStyleMiddle = {
+    position: 'fixed',
+    top: '50%',
+    right: '1%',
+    backgroundColor: '#692d03',
+    justifyContent: 'center',
+    height: '15%',
+    maxWidth: '18%',
+    objectFit: 'scale-down'
 
-//     maxWidth: '90%',
-//     minWidth: '30%',
-//     display: 'flex',
-//     flexDirection: 'row',
+}    
+const buttonStyleBottom = {
+    position: 'fixed',
+    top: '70%',
+    right: '1%',
+    backgroundColor: '#692d03',
+    justifyContent: 'center',
+    height: '15%',
+    maxWidth: '18%',
+    objectFit: 'scale-down'
 
-// }
 
+}    
 
 class Portfolio extends Component {
 
     state = {
-        currentGallery: ''
+        currentGallery: 'promotional'
     }
     
-    gallerySwitch = (event) => {
-        const newGallery = event.target.galleryName;
+    toggleArtwork = (artwork) => {
+        
         this.setState({
-            currentGallery: newGallery
+            currentGallery: artwork
         });
-        console.log('STATE > GALLERY > '+this.state.currentGallery);
+        console.log('state gallery'+this.state.currentGallery)
     }
            
 
@@ -39,10 +61,10 @@ class Portfolio extends Component {
         return (
             <Aux>
                 {/* GALLERY IS BEING SET HERE! */}
-                <GalleryWindow galleryName={'illustrations'}/>
-                <GalleryNavButton galleryName={'digital'} clicker={this.gallerySwitch} />
-                <GalleryNavButton galleryName={'illustrations'} clicker={this.gallerySwitch}/>
-                <GalleryNavButton galleryName={'sketchbook'} clicker={this.gallerySwitch}/>
+                <GalleryWindow galleryName={this.state.currentGallery}/>
+                <GalleryNavButton buttonStyle = {buttonStyleTop} source={digital} galleryName={'digital'} clicked={this.toggleArtwork} />
+                <GalleryNavButton buttonStyle = {buttonStyleMiddle} source={illustrated} galleryName={'illustration'} clicked={this.toggleArtwork}/>
+                <GalleryNavButton buttonStyle = {buttonStyleBottom} source={sketch} galleryName={'sketchbook'} clicked={this.toggleArtwork}/>
             </Aux>
         )}
 
