@@ -1,4 +1,4 @@
-import React, {Component, useState } from 'react';
+import React, {Component} from 'react';
 import Aux from '../../hoc/AuxComponent/AuxComponent'
 import GalleryWindow from '../../Components/GalleryWindow/GalleryWindow';
 import GalleryNavButton from '../../Components/GalleryNavButton/GalleryNavButton';
@@ -60,7 +60,6 @@ class Portfolio extends Component {
     render () {
         return (
             <Aux>
-                {/* GALLERY IS BEING SET HERE! */}
                 <GalleryWindow galleryName={this.state.currentGallery}/>
                 <GalleryNavButton buttonStyle = {buttonStyleTop} source={digital} galleryName={'digital'} clicked={this.toggleArtwork} />
                 <GalleryNavButton buttonStyle = {buttonStyleMiddle} source={illustrated} galleryName={'illustration'} clicked={this.toggleArtwork}/>
