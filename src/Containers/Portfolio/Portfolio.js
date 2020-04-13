@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Aux from '../../hoc/AuxComponent/AuxComponent'
 import GalleryWindow from '../../Components/GalleryWindow/GalleryWindow';
 import GalleryNavButton from '../../Components/GalleryNavButton/GalleryNavButton';
-import {digitalGalleryButton, illustrationsGalleryButton, sketchbookGalleryButton} from '../../assets/website-designs/website-designs-index/website-designs-index';
+import {digitalGalleryButton, illustrationsGalleryButton, sketchbookGalleryButton, digitalButtonOn, illustrationsButtonOn, sketchbookButtonOn } from '../../assets/website-designs/website-designs-index/website-designs-index';
 
 
 const buttonStyleTop = {
@@ -43,26 +43,60 @@ const buttonStyleBottom = {
 class Portfolio extends Component {
 
     state = {
-        currentGallery: 'promotional',
-        toggle: true
+        currentGallery: 'promotional'
     }
     
-    toggleArtwork = (artwork) => {
+    toggleArtwork = (gallery, clickedButton) => {
         
         this.setState({
-            currentGallery: artwork            
+            currentGallery: gallery        
         });
-        console.log('state gallery'+this.state.currentGallery)
+        console.log(this.state);
+
     }
+
+    buttonToggleCheck = (gallery) => {
+        if (gallery !== this.state.currentGallery) {
+            return false;
+        }
+        return true;
+    }
+
+
            
 
     render () {
         return (
             <Aux>
                 <GalleryWindow galleryName={this.state.currentGallery}/>
-                <GalleryNavButton buttonStyle = {buttonStyleTop} source={digitalGalleryButton} galleryName={'digital'} clicked={this.toggleArtwork} toggleButton={false} />
-                <GalleryNavButton buttonStyle = {buttonStyleMiddle} source={illustrationsGalleryButton} galleryName={'illustration'} clicked={this.toggleArtwork}/>
-                <GalleryNavButton buttonStyle = {buttonStyleBottom} source={sketchbookGalleryButton} galleryName={'sketchbook'} clicked={this.toggleArtwork}/>
+
+                <GalleryNavButton 
+                    buttonStyle = {buttonStyleTop} 
+                    buttonBright={digitalButtonOn} 
+                    buttonDark={digitalGalleryButton} 
+                    galleryName={'digital'} 
+                    clicked={this.toggleArtwork}
+                    toggled={this.buttonToggleCheck} 
+                   />
+
+                <GalleryNavButton 
+                    buttonStyle = {buttonStyleMiddle} 
+                    buttonBright={illustrationsButtonOn} 
+                    buttonDark={illustrationsGalleryButton} 
+                    galleryName={'illustration'} 
+                    clicked={this.toggleArtwork}
+                    toggled={this.buttonToggleCheck}
+                    />
+
+                <GalleryNavButton 
+                    buttonStyle = {buttonStyleBottom} 
+                    buttonBright={sketchbookButtonOn} 
+                    buttonDark={sketchbookGalleryButton} 
+                    galleryName={'sketchbook'} 
+                    clicked={this.toggleArtwork}
+                    toggled={this.buttonToggleCheck}
+                    />
+
             </Aux>
         )}
 

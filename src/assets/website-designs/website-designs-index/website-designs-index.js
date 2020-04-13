@@ -5,8 +5,8 @@ import sketchbookGalleryButton from '../SketchbookButtonDark.png';
 import watermarkSignature from '../watermarkSignature.png';
 import watermarkRoseHand from '../../Asset 2.png';
 import bannerDesign from '../website_banner_design.png';
-import digitalGalleryButtonOn from '../DigitalButtonBright.png';
-import illustrationButtonOn from '../IllustrationButtonBright.png';
+import digitalButtonOn from '../DigitalButtonBright.png';
+import illustrationsButtonOn from '../IllustrationButtonBright.png';
 import sketchbookButtonOn from '../SketchbookButtonBright.png';
 
 
@@ -18,8 +18,8 @@ sketchbookGalleryButton,
 watermarkSignature,
 watermarkRoseHand,
 bannerDesign,
-digitalGalleryButtonOn,
-illustrationButtonOn,
+digitalButtonOn,
+illustrationsButtonOn,
 sketchbookButtonOn
 };
 

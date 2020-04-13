@@ -9,15 +9,20 @@ import React from 'react';
 const GalleryNavButton = (props) => {
 
 
-    const { galleryName, clicked, source , buttonStyle} = props;
-
- 
-            return(
-                <div onClick={()=>clicked(galleryName)}>
-                    <img src={source} style={buttonStyle} alt='idk'/>
-                </div>
-            );
-
+    const { galleryName, clicked, buttonDark , buttonStyle, buttonBright, toggled} = props;
+    
+    
+    if (toggled(galleryName)) {
+        return (
+            <div onClick={()=>clicked(galleryName)}>
+                <img src={buttonBright} style={buttonStyle} alt='idk'/>                
+            </div>
+        )}
+        return(
+            <div onClick={()=>clicked(galleryName)}>
+                    <img src={buttonDark} style={buttonStyle} alt='idk'/>                
+            </div>
+        );
 
   
     
