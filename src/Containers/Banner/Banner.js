@@ -1,7 +1,7 @@
 import React from 'react';
 import Aux from '../../hoc/AuxComponent/AuxComponent';
 
-import BannerDesign from '../../assets/website-designs/website_banner_design.png'
+import BannerArt from '../../assets/website-designs/website_banner_design.png'
 
 // This component is the space which displays the website navigation drop-menu, logo, and potential images
 // CSS GUIDE ### BANNER
@@ -14,21 +14,21 @@ import BannerDesign from '../../assets/website-designs/website_banner_design.png
 const bannerStyle = {
     width: '100%',
     marginBottom: '10px',
-    height: '20%',
-    position: 'relative',
-    objectFit: 'scale-down'
+    height: '10%',
+    position: 'relative'
+    // objectFit: 'scale-down'
 }
 const bannerDesign ={
-    objectFit: 'cover',
-    minHeight: '200px',
-    width: '100%'
+    objectFit: 'scale-down',
+    minHeight: '100px',
+    maxWidth: '100%'
 }
 
 const banner = () => (
     <Aux>
         <div style={bannerStyle}>
             
-             <img src={BannerDesign} style={bannerDesign} alt='banner' ></img>
+             <img src={BannerArt} style={bannerDesign} alt='banner' ></img>
            
 
         

@@ -9,8 +9,8 @@ const buttonStyleTop = {
     position: 'fixed',
     top: '30%',
     right: '1%',
-    backgroundColor: '#692d03',
-    justifyContent: 'center',
+    // backgroundColor: '#692d03',
+    // justifyContent: 'center',
     maxWidth: '18%',
     height: '15%',
     objectFit: 'scale-down'
@@ -20,8 +20,8 @@ const buttonStyleMiddle = {
     position: 'fixed',
     top: '50%',
     right: '1%',
-    backgroundColor: '#692d03',
-    justifyContent: 'center',
+    // backgroundColor: '#692d03',
+    // justifyContent: 'center',
     height: '15%',
     maxWidth: '18%',
     objectFit: 'scale-down'
@@ -31,8 +31,8 @@ const buttonStyleBottom = {
     position: 'fixed',
     top: '70%',
     right: '1%',
-    backgroundColor: '#692d03',
-    justifyContent: 'center',
+    // backgroundColor: '#692d03',
+    // justifyContent: 'center',
     height: '15%',
     maxWidth: '18%',
     objectFit: 'scale-down'

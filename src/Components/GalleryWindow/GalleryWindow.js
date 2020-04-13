@@ -1,5 +1,5 @@
 import React from 'react';
-import GallerySwitch from '../../Containers/ImageImporter/ImageImporter';
+import ImageImporter from '../../Containers/ImageImporter/ImageImporter';
 import backgroundDesign from '../../assets/website-designs/vines_background.png';
 
 
@@ -25,7 +25,7 @@ const galleryWindow = (props) => {
     
     return(
         <div style={galleryStyle}>
-            <GallerySwitch gallery={gallery} />
+            <ImageImporter gallery={gallery} />
         </div>
     )
 
