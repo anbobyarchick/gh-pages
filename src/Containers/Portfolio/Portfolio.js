@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import Aux from '../../hoc/AuxComponent/AuxComponent'
 import GalleryWindow from '../../Components/GalleryWindow/GalleryWindow';
 import GalleryNavButton from '../../Components/GalleryNavButton/GalleryNavButton';
-import digital from '../../assets/website-designs/digital_button_design.png';
-import illustrated from '../../assets/website-designs/illustration_button_design.png';
-import sketch from '../../assets/website-designs/sketch_button_design.png';
+import {digitalGalleryButton, illustrationsGalleryButton, sketchbookGalleryButton} from '../../assets/website-designs/website-designs-index/website-designs-index';
 
 
 const buttonStyleTop = {
@@ -61,9 +59,9 @@ class Portfolio extends Component {
         return (
             <Aux>
                 <GalleryWindow galleryName={this.state.currentGallery}/>
-                <GalleryNavButton buttonStyle = {buttonStyleTop} source={digital} galleryName={'digital'} clicked={this.toggleArtwork} />
-                <GalleryNavButton buttonStyle = {buttonStyleMiddle} source={illustrated} galleryName={'illustration'} clicked={this.toggleArtwork}/>
-                <GalleryNavButton buttonStyle = {buttonStyleBottom} source={sketch} galleryName={'sketchbook'} clicked={this.toggleArtwork}/>
+                <GalleryNavButton buttonStyle = {buttonStyleTop} source={digitalGalleryButton} galleryName={'digital'} clicked={this.toggleArtwork} />
+                <GalleryNavButton buttonStyle = {buttonStyleMiddle} source={illustrationsGalleryButton} galleryName={'illustration'} clicked={this.toggleArtwork}/>
+                <GalleryNavButton buttonStyle = {buttonStyleBottom} source={sketchbookGalleryButton} galleryName={'sketchbook'} clicked={this.toggleArtwork}/>
             </Aux>
         )}
 
