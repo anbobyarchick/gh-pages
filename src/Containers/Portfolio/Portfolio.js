@@ -43,13 +43,14 @@ const buttonStyleBottom = {
 class Portfolio extends Component {
 
     state = {
-        currentGallery: 'promotional'
+        currentGallery: 'promotional',
+        toggle: true
     }
     
     toggleArtwork = (artwork) => {
         
         this.setState({
-            currentGallery: artwork
+            currentGallery: artwork            
         });
         console.log('state gallery'+this.state.currentGallery)
     }
@@ -59,7 +60,7 @@ class Portfolio extends Component {
         return (
             <Aux>
                 <GalleryWindow galleryName={this.state.currentGallery}/>
-                <GalleryNavButton buttonStyle = {buttonStyleTop} source={digitalGalleryButton} galleryName={'digital'} clicked={this.toggleArtwork} />
+                <GalleryNavButton buttonStyle = {buttonStyleTop} source={digitalGalleryButton} galleryName={'digital'} clicked={this.toggleArtwork} toggleButton={false} />
                 <GalleryNavButton buttonStyle = {buttonStyleMiddle} source={illustrationsGalleryButton} galleryName={'illustration'} clicked={this.toggleArtwork}/>
                 <GalleryNavButton buttonStyle = {buttonStyleBottom} source={sketchbookGalleryButton} galleryName={'sketchbook'} clicked={this.toggleArtwork}/>
             </Aux>
