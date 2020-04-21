@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52602e5070cc1ac4bf7fe6d9000e6e68",
+    "revision": "ecaeb35a96b98c5103076f83d7b4690f",
     "url": "/gh-pages/index.html"
   },
   {
-    "revision": "142c8255933fd22b0358",
+    "revision": "2eee1b54141ee9d3b264",
     "url": "/gh-pages/static/css/main.60be0eb9.chunk.css"
   },
   {
-    "revision": "6818eefb0e8d74a7c889",
-    "url": "/gh-pages/static/js/2.e95cc5db.chunk.js"
+    "revision": "b58ccd5f4c402412f3e1",
+    "url": "/gh-pages/static/js/2.1b800e05.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/gh-pages/static/js/2.e95cc5db.chunk.js.LICENSE.txt"
+    "url": "/gh-pages/static/js/2.1b800e05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "142c8255933fd22b0358",
-    "url": "/gh-pages/static/js/main.b52e1cd4.chunk.js"
+    "revision": "2eee1b54141ee9d3b264",
+    "url": "/gh-pages/static/js/main.a65399da.chunk.js"
   },
   {
     "revision": "5d7019aee3e0d50a2018",
@@ -38,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2530e4c8199c19cb096194597a64a1f1",
     "url": "/gh-pages/static/media/DigitalButtonDark.2530e4c8.png"
+  },
+  {
+    "revision": "a9babb71a6d4e2876ba79095aafe8c64",
+    "url": "/gh-pages/static/media/GN_Promotional_Logo.a9babb71.png"
+  },
+  {
+    "revision": "3644febd82c80cb5414ca174395b0183",
+    "url": "/gh-pages/static/media/Good_Nature_Logo.3644febd.png"
   },
   {
     "revision": "0f32a33e247a77077235f1c3b35475e7",

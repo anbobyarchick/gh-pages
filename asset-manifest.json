@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/gh-pages/static/css/main.60be0eb9.chunk.css",
-    "main.js": "/gh-pages/static/js/main.b52e1cd4.chunk.js",
-    "main.js.map": "/gh-pages/static/js/main.b52e1cd4.chunk.js.map",
+    "main.js": "/gh-pages/static/js/main.a65399da.chunk.js",
+    "main.js.map": "/gh-pages/static/js/main.a65399da.chunk.js.map",
     "runtime-main.js": "/gh-pages/static/js/runtime-main.1a80714b.js",
     "runtime-main.js.map": "/gh-pages/static/js/runtime-main.1a80714b.js.map",
-    "static/js/2.e95cc5db.chunk.js": "/gh-pages/static/js/2.e95cc5db.chunk.js",
-    "static/js/2.e95cc5db.chunk.js.map": "/gh-pages/static/js/2.e95cc5db.chunk.js.map",
+    "static/js/2.1b800e05.chunk.js": "/gh-pages/static/js/2.1b800e05.chunk.js",
+    "static/js/2.1b800e05.chunk.js.map": "/gh-pages/static/js/2.1b800e05.chunk.js.map",
     "index.html": "/gh-pages/index.html",
-    "precache-manifest.3c9e61692f07cb070cf9c89a094b1e7c.js": "/gh-pages/precache-manifest.3c9e61692f07cb070cf9c89a094b1e7c.js",
+    "precache-manifest.420662e720aa808a2f055eb1b30de0cd.js": "/gh-pages/precache-manifest.420662e720aa808a2f055eb1b30de0cd.js",
     "service-worker.js": "/gh-pages/service-worker.js",
     "static/css/main.60be0eb9.chunk.css.map": "/gh-pages/static/css/main.60be0eb9.chunk.css.map",
-    "static/js/2.e95cc5db.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.e95cc5db.chunk.js.LICENSE.txt",
+    "static/js/2.1b800e05.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.1b800e05.chunk.js.LICENSE.txt",
     "static/media/Asset 1.png": "/gh-pages/static/media/Asset 1.b98fadde.png",
     "static/media/Asset 2.png": "/gh-pages/static/media/Asset 2.ff2b503c.png",
     "static/media/DigitalButtonBright.png": "/gh-pages/static/media/DigitalButtonBright.c8dc97b6.png",
     "static/media/DigitalButtonDark.png": "/gh-pages/static/media/DigitalButtonDark.2530e4c8.png",
+    "static/media/GN_Promotional_Logo.png": "/gh-pages/static/media/GN_Promotional_Logo.a9babb71.png",
+    "static/media/Good_Nature_Logo.png": "/gh-pages/static/media/Good_Nature_Logo.3644febd.png",
     "static/media/IllustrationButtonBright.png": "/gh-pages/static/media/IllustrationButtonBright.0f32a33e.png",
     "static/media/IllustrationButtonDark.png": "/gh-pages/static/media/IllustrationButtonDark.03074e7c.png",
     "static/media/SketchbookButtonBright.png": "/gh-pages/static/media/SketchbookButtonBright.3f4194fb.png",
@@ -86,8 +88,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1a80714b.js",
-    "static/js/2.e95cc5db.chunk.js",
+    "static/js/2.1b800e05.chunk.js",
     "static/css/main.60be0eb9.chunk.css",
-    "static/js/main.b52e1cd4.chunk.js"
+    "static/js/main.a65399da.chunk.js"
   ]
 }
