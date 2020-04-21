@@ -8,6 +8,8 @@ import bannerDesign from '../website_banner_design.png';
 import digitalButtonOn from '../DigitalButtonBright.png';
 import illustrationsButtonOn from '../IllustrationButtonBright.png';
 import sketchbookButtonOn from '../SketchbookButtonBright.png';
+import featherPattern from '../website_background_pattern.png';
+import goodNatureLogo from '../Good_Nature_Logo.png';
 
 
 export {
@@ -20,7 +22,9 @@ watermarkRoseHand,
 bannerDesign,
 digitalButtonOn,
 illustrationsButtonOn,
-sketchbookButtonOn
+sketchbookButtonOn,
+featherPattern,
+goodNatureLogo
 };
 
 
