@@ -10,6 +10,7 @@ import illustrationsButtonOn from '../IllustrationButtonBright.png';
 import sketchbookButtonOn from '../SketchbookButtonBright.png';
 import featherPattern from '../website_background_pattern.png';
 import goodNatureLogo from '../Good_Nature_Logo.png';
+import goodNaturePromotional from '../GN_Promotional_Logo.png';
 
 
 export {
@@ -24,7 +25,8 @@ digitalButtonOn,
 illustrationsButtonOn,
 sketchbookButtonOn,
 featherPattern,
-goodNatureLogo
+goodNatureLogo,
+goodNaturePromotional
 };
 
 

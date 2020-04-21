@@ -6,7 +6,7 @@ import sketchbookGallery from '../../assets/assetsIndex/assetsIndex';
 import illustrationGallery from '../../assets/artwork/illustrations/illustrationsIndex';
 import digitalGallery from '../../assets/artwork/digitalWork/digitalIndex';
 import defaultDisplay from '../../assets/website-designs/watermarkSignature.png';
-import promotionalImage from '../../assets/skeletonHandRose.png';
+import { goodNaturePromotional  as promotionalImage} from '../../assets/website-designs/website-designs-index/website-designs-index';
 import Frame from '../Frame/Frame';
 
 let galleryName = null;
@@ -23,6 +23,13 @@ const artStyle = {
         minWidth: '138px',
         minHeight: '200px',
     
+}
+
+const promotionalStyle = {
+    margin: '5%',
+    objectFit: 'scale-down'
+
+
 }
 const imageImporter = (props) => {
 
@@ -49,10 +56,10 @@ const imageImporter = (props) => {
 
         case 'promotional':
             galleryPaths = promotionalImage;
-            return(<Frame art={(<img src={galleryPaths} style={artStyle} alt='promotional' />)} />);
+            return(<Frame art={(<img src={galleryPaths} style={promotionalStyle} alt='promotional' />)} />);
             
         default:
-            return(<img src={defaultDisplay} style={artStyle} alt='default shrug' />);
+            return(<img src={defaultDisplay}  alt='default shrug' />);
     }
 }
 

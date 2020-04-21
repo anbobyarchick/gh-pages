@@ -12,7 +12,7 @@ const frameStyle = {
     minHeight: '200px',
     padding: '2%',
     margin: '1%',
-    backgroundColor: '#300f16'
+    // backgroundColor: '#300f16'
 
 }
 
