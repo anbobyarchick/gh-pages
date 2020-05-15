@@ -1,7 +1,7 @@
 import React from 'react';
 import Aux from '../../hoc/AuxComponent/AuxComponent';
 
-import BannerArt from '../../assets/website-designs/website_banner_design.png'
+import BannerArt from '../../assets/website-designs/banner_simple.png'
 
 // This component is the space which displays the website navigation drop-menu, logo, and potential images
 // CSS GUIDE ### BANNER
