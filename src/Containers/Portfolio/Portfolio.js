@@ -3,39 +3,39 @@ import Aux from '../../hoc/AuxComponent/AuxComponent'
 import GalleryWindow from '../../Components/GalleryWindow/GalleryWindow';
 import GalleryNavButton from '../../Components/GalleryNavButton/GalleryNavButton';
 import {digitalGalleryButton, illustrationsGalleryButton, sketchbookGalleryButton, digitalButtonOn, illustrationsButtonOn, sketchbookButtonOn } from '../../assets/website-designs/website-designs-index/website-designs-index';
+import ButtonBox from '../../Components/ButtonBox/ButtonBox';
 
-
-const buttonStyleTop = {
-    position: 'fixed',
-    top: '30%',
-    right: '1%',
-    // backgroundColor: '#692d03',
-    // justifyContent: 'center',
-    maxWidth: '18%',
-    height: '15%',
-    objectFit: 'scale-down'
+const buttonStyleDigital = {
+    // // position: 'fixed',
+    // top: '20%',
+    // // right: '1%',
+    // // backgroundColor: '#692d03',
+    // // justifyContent: 'center',
+    // maxWidth: '33%',
+    // height: '15%',
+    // objectFit: 'scale-down'
 
 }
-const buttonStyleMiddle = {
-    position: 'fixed',
-    top: '50%',
-    right: '1%',
-    // backgroundColor: '#692d03',
-    // justifyContent: 'center',
-    height: '15%',
-    maxWidth: '18%',
-    objectFit: 'scale-down'
+const buttonStyleIllustrations = {
+    // // position: 'fixed',
+    // top: '20%',
+    // // right: '1%',
+    // // backgroundColor: '#692d03',
+    // // justifyContent: 'center',
+    // height: '15%',
+    // maxWidth: '33%',
+    // objectFit: 'scale-down'
 
 }    
-const buttonStyleBottom = {
-    position: 'fixed',
-    top: '70%',
-    right: '1%',
-    // backgroundColor: '#692d03',
-    // justifyContent: 'center',
-    height: '15%',
-    maxWidth: '18%',
-    objectFit: 'scale-down'
+const buttonStyleSketchbooks = {
+    // // position: 'fixed',
+    // top: '20%',
+    // // right: '1%',
+    // // backgroundColor: '#692d03',
+    // // justifyContent: 'center',
+    // height: '15%',
+    // maxWidth: '33%',
+    // objectFit: 'scale-down'
 
 
 }    
@@ -68,10 +68,10 @@ class Portfolio extends Component {
     render () {
         return (
             <Aux>
-                <GalleryWindow galleryName={this.state.currentGallery}/>
-
+                
+            <ButtonBox>
                 <GalleryNavButton 
-                    buttonStyle = {buttonStyleTop} 
+                    buttonStyle = {buttonStyleDigital} 
                     buttonBright={digitalButtonOn} 
                     buttonDark={digitalGalleryButton} 
                     galleryName={'digital'} 
@@ -80,7 +80,7 @@ class Portfolio extends Component {
                    />
 
                 <GalleryNavButton 
-                    buttonStyle = {buttonStyleMiddle} 
+                    buttonStyle = {buttonStyleIllustrations} 
                     buttonBright={illustrationsButtonOn} 
                     buttonDark={illustrationsGalleryButton} 
                     galleryName={'illustration'} 
@@ -89,14 +89,15 @@ class Portfolio extends Component {
                     />
 
                 <GalleryNavButton 
-                    buttonStyle = {buttonStyleBottom} 
+                    buttonStyle = {buttonStyleSketchbooks} 
                     buttonBright={sketchbookButtonOn} 
                     buttonDark={sketchbookGalleryButton} 
                     galleryName={'sketchbook'} 
                     clicked={this.toggleArtwork}
                     toggled={this.buttonToggleCheck}
                     />
-
+                    </ButtonBox>
+                <GalleryWindow galleryName={this.state.currentGallery}/>
             </Aux>
         )}
 
