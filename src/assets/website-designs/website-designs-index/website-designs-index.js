@@ -12,23 +12,19 @@ import featherPattern from '../website_background_pattern.png';
 import goodNatureLogo from '../Good_Nature_Logo.png';
 import goodNaturePromotional from '../GN_Promotional_Logo.png';
 
+export { 
+    backgroundDesign,
+    digitalGalleryButton,
+    illustrationsGalleryButton,
+    sketchbookGalleryButton,
+    watermarkSignature,
+    watermarkRoseHand,
+    bannerDesign,
+    digitalButtonOn,
+    illustrationsButtonOn,
+    sketchbookButtonOn,
+    featherPattern,
+    goodNatureLogo,
+    goodNaturePromotional
 
-export {
-backgroundDesign,
-digitalGalleryButton,
-illustrationsGalleryButton,
-sketchbookGalleryButton,
-watermarkSignature,
-watermarkRoseHand,
-bannerDesign,
-digitalButtonOn,
-illustrationsButtonOn,
-sketchbookButtonOn,
-featherPattern,
-goodNatureLogo,
-goodNaturePromotional
 };
-
-
-
-
