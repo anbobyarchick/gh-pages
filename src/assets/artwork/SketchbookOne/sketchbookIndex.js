@@ -1,3 +1,4 @@
+// Full Art
 import sbOne_1 from '../SketchbookOne/sketchbookOne_1.jpg';
 import sbOne_2 from '../SketchbookOne/sketchbookOne_2.jpg';
 import sbOne_4 from '../SketchbookOne/sketchbookOne_4.jpg';
@@ -23,39 +24,67 @@ import sbTwo_5 from '../SketchbookOne/sketchbookTwo_5.jpg';
 import sbTwo_6 from '../SketchbookOne/sketchbookTwo_6.jpg';
 import sbTwo_10 from '../SketchbookOne/sketchbookTwo_10.jpg';
 import sbTwo_11 from '../SketchbookOne/sketchbookTwo_11.jpg';
-import sbThree_1 from '../illustrations/blkWhtBull.jpg';
-import sbThree_2 from '../illustrations/bullCity.jpg';
-import sbThree_3 from '../illustrations/skeletonRose.jpg';
+import sbThree_1 from '../SketchbookOne/sketchbookThree_1.jpg';
 
-const array = [
-sbOne_1 ,
-sbOne_2 ,
-sbOne_4 ,
-sbOne_5 ,
-sbOne_6 ,
-sbOne_7 ,
-sbOne_10,
-sbOne_13,
-sbOne_16,
-sbOne_21,
-sbOne_22,
-sbOne_24,
-sbOne_28,
-sbOne_29,
-sbOne_30,
-sbOne_31,
-sbOne_32,
-sbOne_33,
-sbOne_34,
-sbTwo_2,
-sbTwo_4,
-sbTwo_5,
-sbTwo_6,
-sbTwo_10,
-sbTwo_11,
-sbThree_1,
-sbThree_2,
-sbThree_3
+// Thumbnail
+import thumbSbOne1 from '../ThumbnailIndex/1_1Thumbnail.png';
+import thumbSbOne2 from '../ThumbnailIndex/1_2Thumbnail.png';
+import thumbSbOne4 from '../ThumbnailIndex/1_4Thumbnail.png';
+import thumbSbOne5 from '../ThumbnailIndex/1_5Thumbnail.png';
+import thumbSbOne6 from '../ThumbnailIndex/1_6Thumbnail.png';
+import thumbSbOne7 from '../ThumbnailIndex/1_7Thumbnail.png';
+import thumbSbOne10 from '../ThumbnailIndex/1_10Thumbnail.png';
+import thumbSbOne13 from '../ThumbnailIndex/1_13Thumbnail.png';
+import thumbSbOne15 from '../ThumbnailIndex/1_15Thumbnail.png';
+import thumbSbOne16 from '../ThumbnailIndex/1_16Thumbnail.png';
+import thumbSbOne21 from '../ThumbnailIndex/1_21Thumbnail.png';
+import thumbSbOne22 from '../ThumbnailIndex/1_22Thumbnail.png';
+import thumbSbOne24 from '../ThumbnailIndex/1_24Thumbnail.png';
+import thumbSbOne28 from '../ThumbnailIndex/1_28Thumbnail.png';
+import thumbSbOne29 from '../ThumbnailIndex/1_29Thumbnail.png';
+import thumbSbOne30 from '../ThumbnailIndex/1_30Thumbnail.png';
+import thumbSbOne31 from '../ThumbnailIndex/1_31Thumbnail.png';
+import thumbSbOne32 from '../ThumbnailIndex/1_32Thumbnail.png';
+import thumbSbOne33 from '../ThumbnailIndex/1_33Thumbnail.png';
+import thumbSbOne34 from '../ThumbnailIndex/1_34Thumbnail.png';
+import thumbSbTwo2 from '../ThumbnailIndex/2_2Thumbnail.png';
+import thumbSbTwo3 from '../ThumbnailIndex/2_3Thumbnail.png';
+import thumbSbTwo4 from '../ThumbnailIndex/2_4Thumbnail.png';
+import thumbSbTwo5 from '../ThumbnailIndex/2_5Thumbnail.png';
+import thumbSbTwo6 from '../ThumbnailIndex/2_6Thumbnail.png';
+import thumbSbTwo9 from '../ThumbnailIndex/2_9Thumbnail.png';
+import thumbSbTwo10 from '../ThumbnailIndex/2_10Thumbnail.png';
+import thumbSbTwo11 from '../ThumbnailIndex/2_11Thumbnail.png';
+import thumbSbThree1 from '../ThumbnailIndex/3_1Thumbnail.png';
+
+const sketchbookIndex = [
+{full: sbOne_1 , thumb: thumbSbOne1 },
+{full: sbOne_2 , thumb: thumbSbOne2 },
+{full: sbOne_4 , thumb: thumbSbOne4 },
+{full: sbOne_5 , thumb: thumbSbOne5 },
+{full: sbOne_6 , thumb: thumbSbOne6 },
+{full: sbOne_7 , thumb: thumbSbOne7 },
+{full: sbOne_10, thumb: thumbSbOne10 },
+{full: sbOne_13, thumb: thumbSbOne13 },
+{full: sbOne_16, thumb: thumbSbOne16 },
+{full: sbOne_21, thumb: thumbSbOne21 },
+{full: sbOne_22, thumb: thumbSbOne22 },
+{full: sbOne_24, thumb: thumbSbOne24 },
+{full: sbOne_28, thumb: thumbSbOne28 },
+{full: sbOne_29, thumb: thumbSbOne29 },
+{full: sbOne_30, thumb: thumbSbOne30 },
+{full: sbOne_31, thumb: thumbSbOne31 },
+{full: sbOne_32, thumb: thumbSbOne32 },
+{full: sbOne_33, thumb: thumbSbOne33 },
+{full: sbOne_34, thumb: thumbSbOne34 },
+{full: sbTwo_2, thumb: thumbSbTwo2 },
+{full: sbTwo_4, thumb: thumbSbTwo4 },
+{full: sbTwo_5, thumb: thumbSbTwo5 },
+{full: sbTwo_6, thumb: thumbSbTwo6 },
+{full: sbTwo_10, thumb: thumbSbTwo10 },
+{full: sbTwo_11, thumb: thumbSbTwo11 },
+{full: sbThree_1, thumb: thumbSbThree1 }
+
 ];
 
-export default array;
+export default sketchbookIndex;

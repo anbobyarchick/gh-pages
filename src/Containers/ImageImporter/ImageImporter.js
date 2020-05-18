@@ -3,12 +3,14 @@ import defaultDisplay from '../../assets/website-designs/watermarkSignature.png'
 import { goodNaturePromotional  as promotionalImage} from '../../assets/website-designs/website-designs-index/website-designs-index';
 import Frame from '../Frame/Frame';
 import {digitalIndex} from '../../assets/assetsIndex/assetIndex';
-import {illustrationThumbnails, sketchbookThumbnails} from '../../assets/artwork/ThumbnailIndex/thumbnailIndex';
+import illustrationsArray from '../../assets/artwork/illustrations/illustrationsIndex';
+import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex';
 
 let galleryName = null;
 let galleryPaths = [];
 let artwork = [];
 let framedArt = [];
+let thumbs = [];
 
 const artStyle = {
 
@@ -39,14 +41,20 @@ const imageImporter = (props) => {
             return(framedArt);
             
         case 'illustration':
-            galleryPaths = illustrationThumbnails;
-            artwork = galleryPaths.map((path)=><img src={path} style={artStyle} alt='shrug' />);
+            galleryPaths = illustrationsArray;
+
+            thumbs = galleryPaths.map(path => path.thumb);
+
+            artwork = thumbs.map((path)=><img src={path} style={artStyle} alt='shrug' />);
             framedArt = artwork.map((art)=><Frame art={art} />);
             return(framedArt);
             
         case 'sketchbook':
-            galleryPaths = sketchbookThumbnails;
-            artwork = galleryPaths.map((path)=><img src={path} style={artStyle} alt='shrug' />);
+            galleryPaths = sketchbookIndex;
+
+            thumbs = galleryPaths.map(path => path.thumb);
+
+            artwork = thumbs.map((path)=><img src={path} style={artStyle} alt='shrug' />);
             framedArt = artwork.map((art)=><Frame art={art} />);
             return(framedArt);
 

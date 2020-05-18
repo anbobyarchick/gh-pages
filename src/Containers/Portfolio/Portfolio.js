@@ -43,9 +43,22 @@ const buttonStyleSketchbooks = {
 class Portfolio extends Component {
 
     state = {
-        currentGallery: 'promotional'
+        currentGallery: 'promotional',
+        showLightbox: false
     }
     
+    lightboxOn = () => {
+        this.setState({
+            showLightbox: true
+        });
+    }
+
+    lightboxOff = () => {
+        this.setState({
+            showLightbox: false
+        });
+    }
+
     toggleArtwork = (gallery, clickedButton) => {
         
         this.setState({
