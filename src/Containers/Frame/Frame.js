@@ -5,10 +5,10 @@ let art=null;
 const frameStyle = {
 
     justifyContent: 'center',
-    objectFit: 'scale-down',
+    objectFit: 'cover',
     maxWidth: '382px',
     maxHeight: '475px',
-    minWidth: '138px',
+    minWidth: '450px',
     minHeight: '200px',
     padding: '2%',
     margin: '1%',
@@ -19,9 +19,7 @@ const frameStyle = {
 const frame = (props) => {
     art = props.art;
     return(
-        <div style={frameStyle} >
-            {art}
-        </div>
+        <img src={art} style={frameStyle} alt='shrug' />
     )
 }
 

@@ -14,11 +14,11 @@ let thumbs = [];
 
 const artStyle = {
 
-        justifyContent: 'space-around',
-        objectFit: 'cover',
-        // maxWidth: '700px',
-        // // maxHeight: '600px',
-        // minWidth: '138px',
+        // justifyContent: 'space-around',
+        // // objectFit: 'cover',
+        // // maxWidth: '700px',
+        // // // maxHeight: '600px',
+        // minWidth: '450px',
         // minHeight: '200px',
     
 }
@@ -45,8 +45,7 @@ const imageImporter = (props) => {
 
             thumbs = galleryPaths.map(path => path.thumb);
 
-            artwork = thumbs.map((path)=><img src={path} style={artStyle} alt='shrug' />);
-            framedArt = artwork.map((art)=><Frame art={art} />);
+            framedArt = thumbs.map((path)=><Frame art={path} />);
             return(framedArt);
             
         case 'sketchbook':
@@ -54,8 +53,7 @@ const imageImporter = (props) => {
 
             thumbs = galleryPaths.map(path => path.thumb);
 
-            artwork = thumbs.map((path)=><img src={path} style={artStyle} alt='shrug' />);
-            framedArt = artwork.map((art)=><Frame art={art} />);
+            framedArt = thumbs.map((path)=><Frame art={path} />);
             return(framedArt);
 
         case 'promotional':
