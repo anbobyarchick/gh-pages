@@ -1,26 +1,19 @@
 import React from 'react';
 import defaultDisplay from '../../assets/website-designs/watermarkSignature.png';
 import { goodNaturePromotional  as promotionalImage} from '../../assets/website-designs/website-designs-index/website-designs-index';
-import Frame from '../Frame/Frame';
 import {digitalIndex} from '../../assets/assetsIndex/assetIndex';
 import illustrationsArray from '../../assets/artwork/illustrations/illustrationsIndex';
 import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex';
 
-let galleryName = null;
 let galleryPaths = [];
-let artwork = [];
-let framedArt = [];
-let thumbs = [];
 
 const artStyle = {
-
         // justifyContent: 'space-around',
         // // objectFit: 'cover',
         // // maxWidth: '700px',
         // // // maxHeight: '600px',
         // minWidth: '450px',
         // minHeight: '200px',
-    
 }
 
 const promotionalStyle = {
@@ -29,36 +22,35 @@ const promotionalStyle = {
 
 
 }
+
 const imageImporter = (props) => {
+    const clicked = props.clicked;
 
-    galleryName = props.gallery;
-
-    switch(galleryName) {
+    switch(props.galleryName) {
         case 'digital':
-            galleryPaths = digitalIndex;
-            artwork = galleryPaths.map((path)=><img src={path} style={artStyle} alt='shrug' />);
-            framedArt = artwork.map((art)=><Frame art={art} />);
-            return(framedArt);
-            
+            galleryPaths = digitalIndex.map((path)=> 
+                <img src={path.thumb} alt="thumbnail"  />
+            )
+           
+            return(galleryPaths); 
         case 'illustration':
-            galleryPaths = illustrationsArray;
-
-            thumbs = galleryPaths.map(path => path.thumb);
-
-            framedArt = thumbs.map((path)=><Frame art={path} />);
-            return(framedArt);
             
+            galleryPaths = illustrationsArray.map((art)=>
+
+            <img src={art.thumb} alt='thumbnail shrug' key={art.full} onClick={()=>clicked} />
+            
+            );
+            return(galleryPaths);
         case 'sketchbook':
-            galleryPaths = sketchbookIndex;
+            galleryPaths = sketchbookIndex.map((art)=>
 
-            thumbs = galleryPaths.map(path => path.thumb);
-
-            framedArt = thumbs.map((path)=><Frame art={path} />);
-            return(framedArt);
-
+            <img src={art.thumb} alt='thumbnail shrug' key={art.full} onClick={clicked} />
+            
+            );
+            return(galleryPaths);
         case 'promotional':
             galleryPaths = promotionalImage;
-            return(<Frame art={(<img src={galleryPaths} style={promotionalStyle} alt='promotional' />)} />);
+            return(galleryPaths);
             
         default:
             return(<img src={defaultDisplay}  alt='default shrug' />);

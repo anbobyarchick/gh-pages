@@ -1,6 +1,10 @@
 import React from 'react';
+import ImageImporter from '../ImageImporter/ImageImporter';
 
-let art=null;
+// let art = null;
+// let full = null;
+// let showLightbox = null;
+// let setLightbox = null;
 
 const frameStyle = {
 
@@ -17,10 +21,11 @@ const frameStyle = {
 }
 
 const frame = (props) => {
-    art = props.art;
+
     return(
-        <img src={art} style={frameStyle} alt='shrug' />
-    )
+        <div style={frameStyle} onClick={props.clicked}>
+           {props.children}
+        </div>)
 }
 
 export default frame;

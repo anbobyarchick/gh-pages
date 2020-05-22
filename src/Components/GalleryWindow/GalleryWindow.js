@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageImporter from '../../Containers/ImageImporter/ImageImporter';
-import backgroundDesign from '../../assets/website-designs/vines_background.png';
 
+let galleryName, showLightbox, setLightboxImage = null;
 
 
 const galleryStyle = {
@@ -21,14 +21,7 @@ const galleryStyle = {
 
 
 const galleryWindow = (props) => {
-    const gallery = props.galleryName;
     
-    return(
-        <div style={galleryStyle}>
-            <ImageImporter gallery={gallery} />
-        </div>
-    )
-
 }
 
 export default galleryWindow;

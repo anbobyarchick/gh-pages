@@ -4,6 +4,13 @@ import GalleryWindow from '../../Components/GalleryWindow/GalleryWindow';
 import GalleryNavButton from '../../Components/GalleryNavButton/GalleryNavButton';
 import {digitalGalleryButton, illustrationsGalleryButton, sketchbookGalleryButton, digitalButtonOn, illustrationsButtonOn, sketchbookButtonOn } from '../../assets/website-designs/website-designs-index/website-designs-index';
 import ButtonBox from '../../Components/ButtonBox/ButtonBox';
+import Lightbox from '../../Components/Lightbox/Lightbox';
+import ImageImporter from '../ImageImporter/ImageImporter';
+import LightboxArt from '../../Components/Lightbox/LightboxArt';
+import {digitalIndex} from '../../assets/assetsIndex/assetIndex';
+import illustrationsArray from '../../assets/artwork/illustrations/illustrationsIndex';
+import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex';
+import Frame from '../../Containers/Frame/Frame';
 
 const buttonStyleDigital = {
     // // position: 'fixed',
@@ -44,19 +51,8 @@ class Portfolio extends Component {
 
     state = {
         currentGallery: 'promotional',
-        showLightbox: false
-    }
-    
-    lightboxOn = () => {
-        this.setState({
-            showLightbox: true
-        });
-    }
-
-    lightboxOff = () => {
-        this.setState({
-            showLightbox: false
-        });
+        showLightbox: false,
+        fullArt: ""
     }
 
     toggleArtwork = (gallery, clickedButton) => {
@@ -64,7 +60,6 @@ class Portfolio extends Component {
         this.setState({
             currentGallery: gallery        
         });
-        console.log(this.state);
 
     }
 
@@ -76,12 +71,31 @@ class Portfolio extends Component {
     }
 
 
-           
+    closeLightbox = () => {
+        this.setState({
+            showLightbox: false
+        })
+    }
+
+    viewFullArt = (art) => {
+        console.log("before set state: fullArt = "+this.state.fullArt);
+        this.setState({
+            fullArt: art,
+            showLightbox:true
+        });
+        console.log("after setting full art = "+this.state.fullArt);
+    }
+    
 
     render () {
         return (
             <Aux>
-                
+
+            <Lightbox showing={this.state.showLightbox} >
+                <LightboxArt fullArt={this.state.fullArt} />
+                <button onClick={this.closeLightbox} >Close View</button>
+            </Lightbox>
+
             <ButtonBox>
                 <GalleryNavButton 
                     buttonStyle = {buttonStyleDigital} 
@@ -109,8 +123,13 @@ class Portfolio extends Component {
                     clicked={this.toggleArtwork}
                     toggled={this.buttonToggleCheck}
                     />
-                    </ButtonBox>
-                <GalleryWindow galleryName={this.state.currentGallery}/>
+            </ButtonBox>
+            
+
+                    <Frame  >
+                        <ImageImporter galleryName={this.state.currentGallery} clicked={this.viewFullArt}/>
+                    </Frame>
+
             </Aux>
         )}
 
