@@ -31,19 +31,19 @@ const illustrationsArray =
 
 [
 
-    {thumb:illustration1, full: elephantBalloon },
-    {thumb:illustration2, full: fallingIntoSleep },
-    {thumb:illustration3, full: hourglass },
-    {thumb:illustration4, full: koala },
-    {thumb:illustration5, full: koiCutOut },
-    {thumb:illustration6, full: owl },
-    {thumb:illustration7, full: raccoon },
-    {thumb:illustration8, full: skullWater },
-    {thumb:illustration9, full: smkinLady },
-    {thumb:illustration10, full: sunsetBird },
-    {thumb:illustration11, full: sketchbookOne_15 },
-    {thumb:illustration12, full: sketchbookTwo_3 },
-    {thumb:illustration13, full: sketchbookTwo_9 }
+    {thumb:illustration1, full: elephantBalloon, keyId: "elephantBalloon" },
+    {thumb:illustration2, full: fallingIntoSleep, keyId: "fallingIntoSleep" },
+    {thumb:illustration3, full: hourglass, keyId: "hourglass" },
+    {thumb:illustration4, full: koala, keyId: "koala" },
+    {thumb:illustration5, full: koiCutOut, keyId: "koiCutOut" },
+    {thumb:illustration6, full: owl, keyId: "owl" },
+    {thumb:illustration7, full: raccoon, keyId: "raccoon" },
+    {thumb:illustration8, full: skullWater, keyId: "skullWater" },
+    {thumb:illustration9, full: smkinLady, keyId: "smkinLady" },
+    {thumb:illustration10, full: sunsetBird, keyId: "sunsetBird" },
+    {thumb:illustration11, full: sketchbookOne_15, keyId: "sketchbookOne_15" },
+    {thumb:illustration12, full: sketchbookTwo_3, keyId: "sketchbookTwo_3" },
+    {thumb:illustration13, full: sketchbookTwo_9, keyId:"sketchbookTwo_9" }
 
 ];
 

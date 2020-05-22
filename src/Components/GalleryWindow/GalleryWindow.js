@@ -21,7 +21,11 @@ const galleryStyle = {
 
 
 const galleryWindow = (props) => {
-    
+    return(
+        <div style={galleryStyle}>
+            {props.children}
+        </div>
+    )
 }
 
 export default galleryWindow;

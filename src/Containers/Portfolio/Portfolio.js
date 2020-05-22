@@ -12,6 +12,7 @@ import illustrationsArray from '../../assets/artwork/illustrations/illustrations
 import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex';
 import Frame from '../../Containers/Frame/Frame';
 
+
 const buttonStyleDigital = {
     // // position: 'fixed',
     // top: '20%',
@@ -77,22 +78,22 @@ class Portfolio extends Component {
         })
     }
 
-    viewFullArt = (art) => {
-        console.log("before set state: fullArt = "+this.state.fullArt);
+    viewFullArt = (fullArt) => {
+        
         this.setState({
-            fullArt: art,
+            fullArt: fullArt,
             showLightbox:true
         });
-        console.log("after setting full art = "+this.state.fullArt);
+
     }
-    
+
 
     render () {
         return (
             <Aux>
 
-            <Lightbox showing={this.state.showLightbox} >
-                <LightboxArt fullArt={this.state.fullArt} />
+            <Lightbox showing={this.state.showLightbox} art={this.state.fullArt}>
+                <LightboxArt art={this.state.fullArt} />
                 <button onClick={this.closeLightbox} >Close View</button>
             </Lightbox>
 
@@ -126,9 +127,9 @@ class Portfolio extends Component {
             </ButtonBox>
             
 
-                    <Frame  >
+                    <GalleryWindow >
                         <ImageImporter galleryName={this.state.currentGallery} clicked={this.viewFullArt}/>
-                    </Frame>
+                    </GalleryWindow>
 
             </Aux>
         )}

@@ -21,11 +21,13 @@ const frameStyle = {
 }
 
 const frame = (props) => {
-
+    const fullArt = props.fullArt;
+    const clicked = props.clicked;
     return(
-        <div style={frameStyle} onClick={props.clicked}>
-           {props.children}
-        </div>)
+        <div onClick={() => clicked(fullArt)} >
+           <img src={props.thumbnail} alt="frame shrug" /> 
+        </div>
+    )
 }
 
 export default frame;

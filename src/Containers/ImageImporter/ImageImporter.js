@@ -4,6 +4,7 @@ import { goodNaturePromotional  as promotionalImage} from '../../assets/website-
 import {digitalIndex} from '../../assets/assetsIndex/assetIndex';
 import illustrationsArray from '../../assets/artwork/illustrations/illustrationsIndex';
 import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex';
+import Frame from '../Frame/Frame';
 
 let galleryPaths = [];
 
@@ -23,6 +24,11 @@ const promotionalStyle = {
 
 }
 
+const displayStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    flexDirection: 'column'
+}
 const imageImporter = (props) => {
     const clicked = props.clicked;
 
@@ -31,23 +37,17 @@ const imageImporter = (props) => {
             galleryPaths = digitalIndex.map((path)=> 
                 <img src={path.thumb} alt="thumbnail"  />
             )
-           
             return(galleryPaths); 
         case 'illustration':
-            
-            galleryPaths = illustrationsArray.map((art)=>
-
-            <img src={art.thumb} alt='thumbnail shrug' key={art.full} onClick={()=>clicked} />
-            
-            );
-            return(galleryPaths);
+           return (
+              
+                    illustrationsArray.map((artObj)=>
+                        <Frame key={artObj.keyId} thumbnail={artObj.thumb} fullArt={artObj.full} clicked={clicked} />
+                    ));
         case 'sketchbook':
-            galleryPaths = sketchbookIndex.map((art)=>
-
-            <img src={art.thumb} alt='thumbnail shrug' key={art.full} onClick={clicked} />
-            
-            );
-            return(galleryPaths);
+            return( sketchbookIndex.map((artObj)=>
+                <Frame key={artObj.keyId} thumbnail={artObj.thumb} fullArt={artObj.full} clicked={clicked} />
+            ));
         case 'promotional':
             galleryPaths = promotionalImage;
             return(galleryPaths);

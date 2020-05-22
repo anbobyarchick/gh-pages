@@ -22,7 +22,7 @@ const lightbox = (props) => {
             padding: '16px',
 
         }} >
-            {props.children}
+           {props.children}
         </div>
     )}
     return null;

@@ -1,12 +1,10 @@
 import React from 'react';
 
 const lightboxArt = (props) => {
-    const fullArt = props.fullArt;
-    console.log("MFfullArt");
-    
+    const art=props.art;
     return(
         <div>
-            <img src={fullArt} alt="detail shrug" />
+            <img src={art} alt="detail shrug" />
         </div>
     )
 
