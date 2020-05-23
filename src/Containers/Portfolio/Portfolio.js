@@ -13,39 +13,10 @@ import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex'
 import Frame from '../../Containers/Frame/Frame';
 
 
-const buttonStyleDigital = {
-    // // position: 'fixed',
-    // top: '20%',
-    // // right: '1%',
-    // // backgroundColor: '#692d03',
-    // // justifyContent: 'center',
-    // maxWidth: '33%',
-    // height: '15%',
-    // objectFit: 'scale-down'
-
-}
-const buttonStyleIllustrations = {
-    // // position: 'fixed',
-    // top: '20%',
-    // // right: '1%',
-    // // backgroundColor: '#692d03',
-    // // justifyContent: 'center',
-    // height: '15%',
-    // maxWidth: '33%',
-    // objectFit: 'scale-down'
-
-}    
-const buttonStyleSketchbooks = {
-    // // position: 'fixed',
-    // top: '20%',
-    // // right: '1%',
-    // // backgroundColor: '#692d03',
-    // // justifyContent: 'center',
-    // height: '15%',
-    // maxWidth: '33%',
-    // objectFit: 'scale-down'
-
-
+const buttonStyle = {
+    minWidth: '30%',
+    objectFit: 'scale-down',
+    justifyContent: 'center',
 }    
 
 class Portfolio extends Component {
@@ -99,7 +70,7 @@ class Portfolio extends Component {
 
             <ButtonBox>
                 <GalleryNavButton 
-                    buttonStyle = {buttonStyleDigital} 
+                    buttonStyle = {buttonStyle} 
                     buttonBright={digitalButtonOn} 
                     buttonDark={digitalGalleryButton} 
                     galleryName={'digital'} 
@@ -108,7 +79,7 @@ class Portfolio extends Component {
                    />
 
                 <GalleryNavButton 
-                    buttonStyle = {buttonStyleIllustrations} 
+                    buttonStyle = {buttonStyle} 
                     buttonBright={illustrationsButtonOn} 
                     buttonDark={illustrationsGalleryButton} 
                     galleryName={'illustration'} 
@@ -117,7 +88,7 @@ class Portfolio extends Component {
                     />
 
                 <GalleryNavButton 
-                    buttonStyle = {buttonStyleSketchbooks} 
+                    buttonStyle = {buttonStyle} 
                     buttonBright={sketchbookButtonOn} 
                     buttonDark={sketchbookGalleryButton} 
                     galleryName={'sketchbook'} 

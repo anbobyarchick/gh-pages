@@ -14,13 +14,13 @@ const GalleryNavButton = (props) => {
     
     if (toggled(galleryName)) {
         return (
-            <div onClick={()=>clicked(galleryName)}>
-                <img src={buttonBright} style={buttonStyle} alt='idk'/>                
+            <div style={buttonStyle} onClick={()=>clicked(galleryName)}>
+                <img src={buttonBright}  alt='idk'/>                
             </div>
         )}
         return(
-            <div onClick={()=>clicked(galleryName)}>
-                    <img src={buttonDark} style={buttonStyle} alt='idk'/>                
+            <div style={buttonStyle} onClick={()=>clicked(galleryName)}>
+                    <img src={buttonDark}  alt='idk'/>                
             </div>
         );
 

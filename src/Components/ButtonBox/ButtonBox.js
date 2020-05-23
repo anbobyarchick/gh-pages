@@ -2,7 +2,8 @@ import React from 'react';
 
 const buttonBoxStyle = {
     display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    justifyContent: 'center'
 }
 
 const buttonBox = (props) =>{

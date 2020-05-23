@@ -1,27 +1,21 @@
 import React from 'react';
 
-// const lightboxStyle = {
-//     zIndex: '500',
-//     backgroundColor: 'white',
-//     width: '70%',
-//     boxShadow: '1px 1px 1px black',
-//     padding: '16px',
+const lightboxStyle = {
+    position: 'fixed',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    width: '100%',
+    height: '100%',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+ 
 
-// }
+}
 
 const lightbox = (props) => {
     if(props.showing){
     return(
-        <div style={{
-            transform: props.showing ? 'translateY(0)' : 'translateY(-100vh)',
-            opacity: props.showing ? '1':'0',
-            zIndex: props.showing ? '500': '-1',
-            backgroundColor: 'white',
-            width: '70%',
-            boxShadow: '1px 1px 1px black',
-            padding: '16px',
-
-        }} >
+        <div style={lightboxStyle} >
            {props.children}
         </div>
     )}
