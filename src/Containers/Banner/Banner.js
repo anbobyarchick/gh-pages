@@ -12,16 +12,16 @@ import BannerArt from '../../assets/website-designs/banner_simple.png'
 
 
 const bannerStyle = {
-    width: '100%',
-    marginBottom: '10px',
-    height: '10%',
-    position: 'relative'
-    // objectFit: 'scale-down'
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: '100px',
+    minWidth: '620px'
 }
 const bannerDesign ={
-    objectFit: 'scale-down',
+    objectFit: 'cover',
     minHeight: '100px',
-    maxWidth: '100%'
+    minWidth: '100%'
 }
 
 const banner = () => (
