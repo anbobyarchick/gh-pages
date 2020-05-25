@@ -13,9 +13,10 @@ const lightboxStyle = {
 }
 
 const lightbox = (props) => {
+    const click = props.click;
     if(props.showing){
     return(
-        <div style={lightboxStyle} >
+        <div style={lightboxStyle} onClick={() =>click()} >
            {props.children}
         </div>
     )}

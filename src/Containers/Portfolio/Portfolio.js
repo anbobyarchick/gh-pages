@@ -64,7 +64,7 @@ class Portfolio extends Component {
         return (
             <Aux>
 
-            <Lightbox showing={this.state.showLightbox} art={this.state.fullArt}>
+            <Lightbox showing={this.state.showLightbox} art={this.state.fullArt} click={this.closeLightbox} >
                 <LightboxArt art={this.state.fullArt} />
                 <button onClick={this.closeLightbox} >Close View</button>
             </Lightbox>
