@@ -17,6 +17,7 @@ const buttonStyle = {
     minWidth: '30%',
     objectFit: 'scale-down',
     justifyContent: 'center',
+    margin: '10px'
 }    
 
 class Portfolio extends Component {
