@@ -8,53 +8,47 @@ import Frame from '../Frame/Frame';
 
 let galleryPaths = [];
 
-const artStyle = {
-        // justifyContent: 'space-around',
-        // // objectFit: 'cover',
-        // // maxWidth: '700px',
-        // // // maxHeight: '600px',
-        // minWidth: '450px',
-        // minHeight: '200px',
-}
-
-const promotionalStyle = {
-    margin: '5%',
-    objectFit: 'scale-down'
-
-
-}
-
-const displayStyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    flexDirection: 'column'
-}
 const imageImporter = (props) => {
     const clicked = props.clicked;
 
     switch(props.galleryName) {
         case 'digital':
             return (
-              
                 digitalIndex.map((artObj)=>
-                    <Frame key={artObj.keyId} thumbnail={artObj.thumb} fullArt={artObj.full} clicked={clicked} />
+                    <Frame 
+                        key={artObj.keyId} 
+                        thumbnail={artObj.thumb} 
+                        fullArt={artObj.full} 
+                        clicked={clicked} 
+                    />
                 ));
         case 'illustration':
            return (
-              
-                    illustrationsArray.map((artObj)=>
-                        <Frame key={artObj.keyId} thumbnail={artObj.thumb} fullArt={artObj.full} clicked={clicked} />
-                    ));
+                illustrationsArray.map((artObj)=>
+                    <Frame 
+                        key={artObj.keyId} 
+                        thumbnail={artObj.thumb} 
+                        fullArt={artObj.full} 
+                        clicked={clicked} 
+                    />
+                ));
         case 'sketchbook':
-            return( sketchbookIndex.map((artObj)=>
-                <Frame key={artObj.keyId} thumbnail={artObj.thumb} fullArt={artObj.full} clicked={clicked} />
+            return(
+                sketchbookIndex.map((artObj)=>
+                    <Frame 
+                        key={artObj.keyId} 
+                        thumbnail={artObj.thumb} 
+                        fullArt={artObj.full} 
+                        clicked={clicked} 
+                    />
             ));
         case 'promotional':
             galleryPaths = promotionalImage;
-            return(galleryPaths);
-            
+                return(galleryPaths);
         default:
-            return(<img src={defaultDisplay}  alt='default shrug' />);
+            return(
+                <img src={defaultDisplay}  alt='default shrug' />
+                );
     }
 }
 

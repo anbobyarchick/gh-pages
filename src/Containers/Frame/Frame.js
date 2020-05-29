@@ -1,10 +1,4 @@
 import React from 'react';
-import ImageImporter from '../ImageImporter/ImageImporter';
-
-// let art = null;
-// let full = null;
-// let showLightbox = null;
-// let setLightbox = null;
 
 const frameStyle = {
 

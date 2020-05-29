@@ -7,10 +7,6 @@ import ButtonBox from '../../Components/ButtonBox/ButtonBox';
 import Lightbox from '../../Components/Lightbox/Lightbox';
 import ImageImporter from '../ImageImporter/ImageImporter';
 import LightboxArt from '../../Components/Lightbox/LightboxArt';
-import {digitalIndex} from '../../assets/assetsIndex/assetIndex';
-import illustrationsArray from '../../assets/artwork/illustrations/illustrationsIndex';
-import sketchbookIndex from '../../assets/artwork/SketchbookOne/sketchbookIndex';
-import Frame from '../../Containers/Frame/Frame';
 
 
 const buttonStyle = {
@@ -64,9 +60,11 @@ class Portfolio extends Component {
         return (
             <Aux>
 
-            <Lightbox showing={this.state.showLightbox} art={this.state.fullArt} click={this.closeLightbox} >
-                <LightboxArt art={this.state.fullArt} />
-                <button onClick={this.closeLightbox} >Close View</button>
+            <Lightbox 
+                showing={this.state.showLightbox} 
+                art={this.state.fullArt} 
+                click={this.closeLightbox} >
+                    <LightboxArt art={this.state.fullArt} />
             </Lightbox>
 
             <ButtonBox>
