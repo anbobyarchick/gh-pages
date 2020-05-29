@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/gh-pages/static/css/main.60be0eb9.chunk.css",
-    "main.js": "/gh-pages/static/js/main.3504e9df.chunk.js",
-    "main.js.map": "/gh-pages/static/js/main.3504e9df.chunk.js.map",
+    "main.js": "/gh-pages/static/js/main.eb445d93.chunk.js",
+    "main.js.map": "/gh-pages/static/js/main.eb445d93.chunk.js.map",
     "runtime-main.js": "/gh-pages/static/js/runtime-main.1a80714b.js",
     "runtime-main.js.map": "/gh-pages/static/js/runtime-main.1a80714b.js.map",
-    "static/js/2.389fd14b.chunk.js": "/gh-pages/static/js/2.389fd14b.chunk.js",
-    "static/js/2.389fd14b.chunk.js.map": "/gh-pages/static/js/2.389fd14b.chunk.js.map",
+    "static/js/2.b2cb643b.chunk.js": "/gh-pages/static/js/2.b2cb643b.chunk.js",
+    "static/js/2.b2cb643b.chunk.js.map": "/gh-pages/static/js/2.b2cb643b.chunk.js.map",
     "index.html": "/gh-pages/index.html",
-    "precache-manifest.bac9d03b9859be9cd24fcbc9efec06eb.js": "/gh-pages/precache-manifest.bac9d03b9859be9cd24fcbc9efec06eb.js",
+    "precache-manifest.58d2c6f2af7a39f5b1fb195b74e80082.js": "/gh-pages/precache-manifest.58d2c6f2af7a39f5b1fb195b74e80082.js",
     "service-worker.js": "/gh-pages/service-worker.js",
     "static/css/main.60be0eb9.chunk.css.map": "/gh-pages/static/css/main.60be0eb9.chunk.css.map",
-    "static/js/2.389fd14b.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.389fd14b.chunk.js.LICENSE.txt",
+    "static/js/2.b2cb643b.chunk.js.LICENSE.txt": "/gh-pages/static/js/2.b2cb643b.chunk.js.LICENSE.txt",
     "static/media/1_10Thumbnail.png": "/gh-pages/static/media/1_10Thumbnail.73d262a5.png",
     "static/media/1_13Thumbnail.png": "/gh-pages/static/media/1_13Thumbnail.82e9291f.png",
     "static/media/1_15Thumbnail.png": "/gh-pages/static/media/1_15Thumbnail.8179f3a9.png",
@@ -66,7 +66,6 @@
     "static/media/raccoon.jpg": "/gh-pages/static/media/raccoon.6722b096.jpg",
     "static/media/raccoonThumbnail.png": "/gh-pages/static/media/raccoonThumbnail.ae476b43.png",
     "static/media/skeletonHandRose.png": "/gh-pages/static/media/skeletonHandRose.ea4400fd.png",
-    "static/media/skeletonRoseThumbnail.png": "/gh-pages/static/media/skeletonRoseThumbnail.c01ba131.png",
     "static/media/sketchbookOne_1.jpg": "/gh-pages/static/media/sketchbookOne_1.d7ceffb3.jpg",
     "static/media/sketchbookOne_10.jpg": "/gh-pages/static/media/sketchbookOne_10.c1aacf06.jpg",
     "static/media/sketchbookOne_13.jpg": "/gh-pages/static/media/sketchbookOne_13.45c14796.jpg",
@@ -107,8 +106,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1a80714b.js",
-    "static/js/2.389fd14b.chunk.js",
+    "static/js/2.b2cb643b.chunk.js",
     "static/css/main.60be0eb9.chunk.css",
-    "static/js/main.3504e9df.chunk.js"
+    "static/js/main.eb445d93.chunk.js"
   ]
 }
